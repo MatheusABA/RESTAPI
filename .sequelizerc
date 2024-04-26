@@ -1,0 +1,14 @@
+const { resolve } = require('path')
+
+
+
+module.exports = {
+	// resolving the path of where database.js file will be
+	config: resolve(__dirname, 'src', 'config', 'database.js'),
+	// resolving the path of where models files will be
+	'models-path': resolve(__dirname, 'src', 'models'),
+	// resolving the path of where database alteration history will be
+	'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'),
+	// resolving the path of seeders
+	'seeders-path': resolve(__dirname, 'src', 'database', 'seeds'),
+}
