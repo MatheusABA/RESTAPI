@@ -16,7 +16,7 @@ class PhotoController {
 			}
 
 			try {
-				// console.log(req.body,req.file)
+				console.log(req.body.employee_id)
 				const { originalname, filename } = req.file;
 				const { employee_id } = req.body;
 				const photo = await Photo.create({ originalname, filename, employee_id })
